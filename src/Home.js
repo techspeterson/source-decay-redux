@@ -1,11 +1,11 @@
-import Topbar from "./Topbar";
+import OuterContainer from "./OuterContainer";
 import './App.css';
 
 function Home() {
   return (
-    <div>
-      <Topbar />
-    </div>
+    <OuterContainer>
+      test
+    </OuterContainer>
   );
 }
 

@@ -168,8 +168,8 @@ p {
 }
 
 #container-outer {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -421,7 +421,7 @@ p {
   border-radius: 10px;
   width: 100%;
   height: 90%;
-  background: var(--colour2) url({image:sidebar});
+  /* background: var(--colour2) url({image:sidebar}); */
   background-size: auto 150%;
   background-position: 85% 10%;
 }

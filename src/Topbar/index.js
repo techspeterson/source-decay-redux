@@ -20,7 +20,9 @@ function Topbar() {
           </ul>
           <hr />
           <form action="/search" method="get" className="search">
-            <input type="text" name="q" value="{SearchQuery}" className="search-input" />
+            <input type="text" name="q"
+              // value="{SearchQuery}"
+              className="search-input" />
             <button type="submit" className="search-submit"><span className="fas fa-search" alt="Search"></span></button>
           </form>
         </div>
@@ -28,7 +30,7 @@ function Topbar() {
       </div>
       <div className="corner-small corner-bottom-right"></div>
       <a href="/"><div id="topbar-inner">
-        <h1>Source Decay</h1>
+        <h1>SOURCE DECAY</h1>
       </div></a>
       <div className="corner-small corner-bottom-left"></div>
       <hr className="hr-deco" />
