@@ -308,10 +308,10 @@ p {
   list-style-type: none;
 }
 
-.postnotes {
-  /*background: rgba(255, 255, 255, 0.2);*/
-  /*padding: 5px 0;*/
-}
+/* .postnotes {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 0;
+} */
 
 .spacer {
   margin: 0 5px;

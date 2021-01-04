@@ -1,4 +1,5 @@
 import React from "react";
+import Linkbox from "../Linkbox";
 
 const toggleMenu = () => { }
 
@@ -15,9 +16,7 @@ function Topbar() {
           </div>
 
 
-          <ul className="linkbox">
-            <li><a href="/">index</a></li>
-          </ul>
+          <Linkbox />
           <hr />
           <form action="/search" method="get" className="search">
             <input type="text" name="q"

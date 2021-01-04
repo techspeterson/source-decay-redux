@@ -1,5 +1,6 @@
 import React from "react";
-import TopBar from "../Topbar";
+import TopBar from "./TopBar";
+import Linkbox from "./Linkbox";
 
 function OuterContainer(props) {
   return (
@@ -17,9 +18,7 @@ function OuterContainer(props) {
               </div>
 
 
-              <ul className="linkbox mobile-hide">
-                <li><a href="/">index</a></li>
-              </ul>
+              <Linkbox />
 
               <form action="/search" method="get" className="search">
                 <input type="text" name="q"
