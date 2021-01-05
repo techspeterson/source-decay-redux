@@ -4,7 +4,7 @@ function TextPost(props) {
   return (
     <>
       {props.title ?
-        <h2>{props.title}</h2>
+        <h2 className="post-title">{props.title}</h2>
         : null}
       {props.body}
     </>

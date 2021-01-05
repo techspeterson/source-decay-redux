@@ -19,13 +19,13 @@ function DateBlock(props) {
           {props.hasNotes &&
             <div className="footer-item footer-inner">
               <i className="far fa-star icon"></i>
-              {/* <span className="footer-inner">{NoteCount}</span> */}
+              <span className="footer-inner">0</span>
             </div>
           }
 
-          <div className="footer-item">
+          {/* <div className="footer-item">
             <a href="{ReblogURL}"><span className="fas fa-retweet icon" alt="Reblog"></span></a>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

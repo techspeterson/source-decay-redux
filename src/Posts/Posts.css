@@ -1,0 +1,29 @@
+.post {
+  color: var(--colour4);
+  background-color: var(--colour2);
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.post-title {
+  text-align: center;
+}
+
+.post-footer {
+  border-radius: 6px;
+}
+
+.permalinks {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font2);
+  background: var(--colour1);
+  border-radius: 6px;
+}
+
+.permalinks-tags {
+  margin-top: 5px;
+}
