@@ -1,10 +1,12 @@
 import OuterContainer from "./OuterContainer";
-import './App.css';
+import PostOuter from "./Posts/PostOuter";
 
 function Home() {
   return (
     <OuterContainer>
-      test
+      <PostOuter>
+        test
+      </PostOuter>
     </OuterContainer>
   );
 }

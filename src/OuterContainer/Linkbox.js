@@ -18,7 +18,6 @@ const links = [
 function Linkbox() {
   return (
     <ul className="linkbox">
-      {/* <li><a href="/">index</a></li> */}
       {links.map(link => {
         return <li><a href={link.path || `/${link.name}`}>{link.name}</a></li>
       })}

@@ -1,6 +1,6 @@
 import React from "react";
 import TopBar from "./TopBar";
-import Linkbox from "./Linkbox";
+import Menu from "./Menu";
 
 function OuterContainer(props) {
   return (
@@ -10,35 +10,7 @@ function OuterContainer(props) {
         <div id="container-mid">
           <div className="container-box sidebar mobile-hide-flex">
             <div className="sidebar-inner">
-
-              <div id="description">
-                <hr />
-              description here
-              <hr />
-              </div>
-
-
-              <Linkbox />
-
-              <form action="/search" method="get" className="search">
-                <input type="text" name="q"
-                  // value="{SearchQuery}"
-                  className="search-input" />
-                <button type="submit" className="search-submit"><span className="fas fa-search" alt="Search"></span></button>
-              </form>
-
-              <div className="pagination">
-                {/* {block:Pagination}
-            {block:PreviousPage}
-                <a href="{PreviousPage}">&#60;</a>
-            {/block:PreviousPage}
-            <span className="spacer">page {CurrentPage}</span>
-            {block:NextPage}
-                <a href="{NextPage}">&#62;</a>
-            {/block:NextPage}
-        {/block:Pagination} */}
-              </div>
-
+              <Menu isDesktop />
             </div>
           </div>
 
