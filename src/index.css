@@ -13,7 +13,7 @@ body {
   --colour4: #cdcdcd;
 
   background-color: var(--colour3);
-  /* background-image: url('{image:background}'); */
+  background-image: url('./assets/bg.jpg');
   background-attachment: fixed;
   background-size: cover;
   font-family: var(--font1);
