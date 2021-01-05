@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Menu from "../Menu";
 
-const toggleMenu = () => { }
-
 function Topbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  }
+
   return (
     <div id="topbar">
       <hr className="hr-deco mobile-hide" />
       <div className="menu mobile-show">
-        <i className="fas fa-bars menu-icon" onClick={toggleMenu}></i>
-        <div id="menu-inner" className="container-box">
+        <i className="fas fa-bars menu-icon" onClick={toggleMenu}>test</i>
+        <div id="menu-inner" className="container-box"
+          style={{ display: menuOpen ? "block" : "none" }}>
           <Menu />
         </div>
 

@@ -151,7 +151,6 @@ p {
   flex-direction: column;
   pointer-events: none;
   justify-content: space-between;
-  padding-top: 54px;
 }
 
 #container-mid {
@@ -357,14 +356,14 @@ p {
   position: absolute;
   width: 100vw;
   height: calc(100vh - 55px);
-  display: none;
+  /* display: none; */
   top: 55px;
   left: 0;
 }
 
-.menu:hover .menu-inner {
+/* .menu:hover .menu-inner {
   display: block;
-}
+} */
 
 .search {
   display: flex;
@@ -409,12 +408,6 @@ p {
       width: 520px;
       padding: 0;
       margin: 100px auto;
-  }
-}
-
-@media only screen and (min-width: 800px) {
-  #container-outer {
-      padding-top: 0;
   }
 }
 
