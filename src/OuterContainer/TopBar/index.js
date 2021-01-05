@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Menu from "../Menu";
 
 function Topbar() {
@@ -12,7 +13,8 @@ function Topbar() {
     <div id="topbar">
       <hr className="hr-deco mobile-hide" />
       <div className="menu mobile-show">
-        <i className="fas fa-bars menu-icon" onClick={toggleMenu}>test</i>
+        <FontAwesomeIcon icon="bars" className="menu-icon" onClick={toggleMenu} />
+        {/* <i className="fas fa-bars menu-icon" onClick={toggleMenu}>test</i> */}
         <div id="menu-inner" className="container-box"
           style={{ display: menuOpen ? "block" : "none" }}>
           <Menu />

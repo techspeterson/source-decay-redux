@@ -1,5 +1,12 @@
+import React from "react";
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faBars, faSearch, faStar } from '@fortawesome/free-solid-svg-icons'
+
 import Container from "./OuterContainer";
 import PostOuter from "./Posts/PostOuter";
+
+library.add(faBars, faSearch, faStar);
 
 const posts = [
   {

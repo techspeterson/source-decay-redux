@@ -1,4 +1,5 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { DateTime } from "luxon";
 
 function DateBlock(props) {
@@ -16,12 +17,10 @@ function DateBlock(props) {
         </div>
 
         <div className="footer-right">
-          {props.hasNotes &&
-            <div className="footer-item footer-inner">
-              <i className="far fa-star icon"></i>
-              <span className="footer-inner">0</span>
-            </div>
-          }
+          <div className="footer-item footer-inner">
+            <FontAwesomeIcon icon="star" className="icon" />
+            <span className="footer-inner">0</span>
+          </div>
 
           {/* <div className="footer-item">
             <a href="{ReblogURL}"><span className="fas fa-retweet icon" alt="Reblog"></span></a>

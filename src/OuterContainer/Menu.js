@@ -1,4 +1,5 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Linkbox from "./Linkbox";
 
 function Menu({ isDesktop }) {
@@ -16,7 +17,10 @@ function Menu({ isDesktop }) {
         <input type="text" name="q"
           // value="{SearchQuery}"
           className="search-input" />
-        <button type="submit" className="search-submit"><span className="fas fa-search" alt="Search"></span></button>
+        <button type="submit" className="search-submit">
+          {/* <span className="fas fa-search" alt="Search"></span> */}
+          <FontAwesomeIcon icon="search" />
+        </button>
       </form>
 
       {isDesktop &&
