@@ -1,9 +1,14 @@
 import React from "react";
+import DateBlock from "./DateBlock";
+import TextPost from "./TextPost";
 
-function PostOuter(props) {
+
+
+function PostOuter({ type, ...props }) {
   return (
     <div className="post">
-      {props.children}
+      {type === "text" && <TextPost {...props} />}
+      <DateBlock date={props.date} />
     </div>
   )
 }
