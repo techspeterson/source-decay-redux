@@ -2,10 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Home from './Home';
+import { Helmet } from "react-helmet";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Helmet
+      titleTemplate="Source Decay - %s"
+    >
+    </Helmet>
     <Home />
   </React.StrictMode>,
   document.getElementById('root')

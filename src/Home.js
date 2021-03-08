@@ -2,7 +2,7 @@ import React from "react";
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faBars, faSearch, faStar } from '@fortawesome/free-solid-svg-icons'
-
+import { Helmet } from "react-helmet";
 import Container from "./OuterContainer";
 import PostOuter from "./Posts/PostOuter";
 
@@ -21,6 +21,9 @@ const posts = [
 function Home() {
   return (
     <Container>
+      <Helmet>
+        <title>Home</title>
+      </Helmet>
       {posts.map(post => {
         return <PostOuter {...post} />
       })}
