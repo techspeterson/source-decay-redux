@@ -10,6 +10,8 @@ ReactDOM.render(
     <Helmet
       titleTemplate="Source Decay - %s"
     >
+      <meta property="og:image" content="./assets/bg.jpg" />
+      <meta name="description" content="Source Decay - A React experiment" />
     </Helmet>
     <Home />
   </React.StrictMode>,
